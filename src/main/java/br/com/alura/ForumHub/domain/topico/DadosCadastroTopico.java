@@ -1,25 +1,20 @@
 package br.com.alura.ForumHub.domain.topico;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import java.time.LocalDateTime;
 
+//Cadastro do topico
 public record DadosCadastroTopico(
 
-        @NotBlank
+        @NotBlank(message = "{titulo.obrigatorio}")
         String titulo,
 
-        @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
-        LocalDateTime data,
+        @NotBlank(message = "{mensagem.obrigatorio}")
+        String mensagem,
 
-        @NotNull
-        Boolean estadoTopico,
-
-        @NotBlank
+        @NotBlank(message = "{autor.obrigatorio}")
         String autor,
 
-        @NotBlank
+        @NotBlank(message = "{curso.obrigatorio}")
         String curso
 ) {
 }
