@@ -54,11 +54,11 @@ public class TopicoController {
     }
 
     //Detalhamento de tópicos
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public ResponseEntity detalhar(@PathVariable Long id){
 
-        var topico = repository.getReferenceById(id);
 
+        var topico = repository.getReferenceById(id);
         return ResponseEntity.ok(new DadosDetalhamentoTopico(topico));
 
     }
@@ -72,7 +72,6 @@ public class TopicoController {
         topico.atualizarInformacoes(dados);
 
         return ResponseEntity.ok(new DadosDetalhamentoTopico(topico));
-
 
     }
 
@@ -92,7 +91,6 @@ public class TopicoController {
         }
 
         return ResponseEntity.noContent().build();
-
 
     }
 

@@ -36,8 +36,6 @@ public class TokenService {
             throw new RuntimeException("Erro ao gerar Token JWT", e);
         }
 
-
-
     }
 
     //Metodo que válida o token

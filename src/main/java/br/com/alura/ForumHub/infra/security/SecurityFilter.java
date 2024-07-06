@@ -1,6 +1,5 @@
 package br.com.alura.ForumHub.infra.security;
 
-import br.com.alura.ForumHub.domain.usuario.Usuario;
 import br.com.alura.ForumHub.domain.usuario.UsuarioRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
