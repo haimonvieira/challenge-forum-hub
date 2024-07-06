@@ -1,5 +1,6 @@
 package br.com.alura.ForumHub.domain.topico;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -51,6 +52,8 @@ public class Topico {
         if(dados.curso() != null){
             this.curso = dados.curso();
         }
+
+        this.data = LocalDateTime.now();
 
     }
 
