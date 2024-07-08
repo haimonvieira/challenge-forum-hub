@@ -12,6 +12,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+//Aqui sao tratados os erros do ResponseEntity das classes controllers
 @RestControllerAdvice
 public class TratadorDeErros {
 
@@ -23,7 +24,9 @@ public class TratadorDeErros {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity tratarErro400(MethodArgumentNotValidException ex) {
         var erros = ex.getFieldErrors();
-        return ResponseEntity.badRequest().body(erros.stream().map(DadosErroValidacao::new).toList());
+        return ResponseEntity.badRequest().body(erros.stream()
+                .map(DadosErroValidacao::new)
+                .toList());
     }
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
@@ -33,19 +36,20 @@ public class TratadorDeErros {
 
     @ExceptionHandler(BadCredentialsException.class)
     public ResponseEntity tratarErroBadCredentials() {
-        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciais inválidas");
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciais inválidas.");
     }
 
     @ExceptionHandler(AuthenticationException.class)
     public ResponseEntity tratarErroAuthentication() {
-        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Falha na autenticação");
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Falha na autenticação.");
     }
 
     @ExceptionHandler(AccessDeniedException.class)
     public ResponseEntity tratarErroAcessoNegado() {
-        return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Acesso negado");
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Acesso negado.");
     }
 
+    //Aqui é convertido para um JSON o campo do JSON e a mensagem de erro
     private record DadosErroValidacao(String campo, String mensagem) {
         public DadosErroValidacao(FieldError erro) {
             this(erro.getField(), erro.getDefaultMessage());

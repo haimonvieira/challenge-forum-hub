@@ -1,6 +1,5 @@
 package br.com.alura.ForumHub.domain.topico;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

@@ -1,6 +1,7 @@
 package br.com.alura.ForumHub.infra.security;
 
 import br.com.alura.ForumHub.domain.usuario.Usuario;
+import br.com.alura.ForumHub.infra.exception.ValidacaoException;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
@@ -15,8 +16,11 @@ import java.time.ZoneOffset;
 @Service
 public class TokenService {
 
-    @Value("${forum_hub.security.token.secret}")
+    @Value("${forum_hub.secret}")
     private String secret;
+
+    @Value("${forum_hub.expiration}")
+    private long expiration;
 
     private static final String ISSUER = "Fórum Hub";
 
@@ -33,7 +37,7 @@ public class TokenService {
                     .sign(algoritmo);
 
         }catch (JWTCreationException e){
-            throw new RuntimeException("Erro ao gerar Token JWT", e);
+            throw new ValidacaoException("Erro ao gerar Token JWT: " + e);
         }
 
     }
@@ -52,13 +56,13 @@ public class TokenService {
                     .getSubject();
 
         }catch (JWTVerificationException e){
-            throw new RuntimeException("Token JWT inválido ou expirado", e);
+            throw new ValidacaoException("Token JWT inválido ou expirado: " + e);
         }
 
     }
 
     private Instant expiracao(){
-        return LocalDateTime.now().plusHours(2).toInstant(ZoneOffset.of("-03:00"));
+        return LocalDateTime.now().plusSeconds(expiration).toInstant(ZoneOffset.of("-03:00"));
     }
 
 }
