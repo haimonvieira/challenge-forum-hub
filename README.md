@@ -37,7 +37,7 @@ Você pode baixar este projeto **[clicando aqui](https://github.com/haimonvieira
 
 ## 🛠️ Rodando o projeto
 -  Descompacte o arquivo .zip
--  Abra o IntelliJ -> Open
+-  Abra o **IntelliJ -> Open**
 -  Procure o local onde o arquivo foi extraido e selecione-o
 -  Aguarde as dependências do Maven serem baixadas e execute o projeto no botão de Play verde em ForumHubAppllication
 
