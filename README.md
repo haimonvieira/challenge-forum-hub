@@ -40,6 +40,7 @@ Você pode baixar este projeto **[clicando aqui](https://github.com/haimonvieira
 -  Abra o **IntelliJ -> Open**
 -  Procure o local onde o arquivo foi extraido e selecione-o
 -  Aguarde as dependências do Maven serem baixadas e execute o projeto no botão de Play verde em ForumHubAppllication
+** É necessário ter instalado um SGBD e cadastrado um usuário para que seja autenticado
 
 ## Agradecimentos
 
