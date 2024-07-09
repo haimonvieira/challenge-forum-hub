@@ -42,10 +42,11 @@ public class TopicoController {
 
     //Mostrar todos os tópicos
     //JSON que retornara os dados de todos os topicos com maximo de 10 elementos
-    //ordenando pelo titulo
+    //ordenando pelo titulo e id
     //GET para todos os topicos
     @GetMapping
-    public ResponseEntity<Page<DadosListagemTopico>> listar(@PageableDefault(size = 10, sort = {"titulo"})
+    public ResponseEntity<Page<DadosListagemTopico>> listar(@PageableDefault(size = 10,
+            sort = {"id", "titulo"})
                                                             Pageable paginacao){
 
         var page = repository.findAllByEstadoTopicoTrue(paginacao)
