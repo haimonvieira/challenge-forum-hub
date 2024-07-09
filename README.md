@@ -31,4 +31,9 @@ Ficam aqui meus sinceros agradecimentos aos instrutores e colaboradores da Alura
 -  Paz Correa nos ajudando a dar um gás nesta etapa final da formação Spring
 -  Nosso queridíssimo Maurício Santiago nos apoiando muito com seus incentivos durantes as lives
 -  Camila Fernanda Alves que me ajudou com seu artigo sobre [Como escrever um README incrível no seu Github](https://www.alura.com.br/artigos/escrever-bom-readme)
--  
+-  Jacqueline Oliveira e Iasmin Araújo em especial, pois foi com elas que aprendi POO de fato e muito bem. Agradeço imensamente vocês duas, os desafios propos foram essenciais.
+-  A Brenda Souza pelo challenge do LiterAlura que foi um challenge mais dificil que já fiz, mas foi bom para botar tudo em pratica e sofrer um pouco
+-  E ao Rodrigo da Silva pela aula de API REST e explicar tão bem o que cada anotacão e dependência está fazendo, isso sanou minhas dúvidas sem ter que perguntar: "para que ele está fazendo isso?"
+-  Paulo Silveira, nosso entusiasta de IA que também ensinou muito sobre Java e orientação a objetos.
+
+Acredito que tenham faltado alguns intrutores, mas saibam que todos foram importantes para meu sucesso até aqui, um imenso agradecimento a todos.
