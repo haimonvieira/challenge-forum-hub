@@ -39,8 +39,12 @@ Você pode baixar este projeto **[clicando aqui](https://github.com/haimonvieira
 -  Descompacte o arquivo .zip
 -  Abra o **IntelliJ -> Open**
 -  Procure o local onde o arquivo foi extraido e selecione-o
--  Aguarde as dependências do Maven serem baixadas e execute o projeto no botão de Play verde em ForumHubAppllication
-** É necessário ter instalado um SGBD e cadastrado um usuário para que seja autenticado
+-  Aguarde as dependências do Maven serem baixadas
+-  Configure as variáveis de ambientes no arquivo `application.properties` em **src -> main -> resources**
+  -  Caso não tenha as variáveis de ambiente configuradas, recomendo que veja este artigo da Alura de como configurar: [Como configurar variáveis de ambiente no Windows, Linux e macOS](https://www.google.com/search?client=safari&rls=en&q=variaveis+de+amviente+alura&ie=UTF-8&oe=UTF-8)
+- Não se esqueca de criar o DB com o mesmo nome que está no arquivo ou mudar `jdbc:postgresql://${DB_HOST}/{SEU_BANCO_DE_DADOS}`
+- Após feitas as mudanças, selecione o `ForumHubApplication` e inicie a aplicação
+
 
 ## Agradecimentos
 
