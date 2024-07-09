@@ -47,7 +47,7 @@ Você pode baixar este projeto **[clicando aqui](https://github.com/haimonvieira
 Ficam aqui meus sinceros agradecimentos aos instrutores e colaboradores da Alura:
 
 -  **Eric Monné** por estar sempre nos ajudando nas lives
--  **Paz Correa nos** ajudando a dar um gás nesta etapa final da formação Spring
+-  **Paz Correa** nos ajudando a dar um gás nesta etapa final da formação Spring
 -  Nosso queridíssimo **Maurício Santiago** nos apoiando muito com seus incentivos durantes as lives
 -  **Camila Fernanda Alves** que me ajudou com seu artigo sobre [Como escrever um README incrível no seu Github](https://www.alura.com.br/artigos/escrever-bom-readme)
 -  **Jacqueline Oliveira** e **Iasmin Araújo** em especial, pois foi com elas que aprendi POO de fato e muito bem. Agradeço imensamente vocês duas, os desafios propostos foram essenciais.
