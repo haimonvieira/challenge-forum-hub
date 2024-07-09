@@ -17,7 +17,8 @@ Mais um desafio do programa ONE, um programa com parceria entre Alura e Oracle p
 -  Autenticação do usuário por meio de token e;
 -  Tratamento do código http.
 
-Aqui está um vídeo para entender melhor como funciona as operacoes CRUD e o tratamentos dos codigos http:
+Para entender melhor, veja como funciona as operacoes CRUD do fórum e o tratamentos dos codigos http
+**[clicando aqui](https://github.com/haimonvieira/challenge-forum-hub/tree/main/videos#readme)**
 
 
 ## Tecnologias utilizadas
