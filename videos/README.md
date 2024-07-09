@@ -1,1 +1,2 @@
-## CRUD do Fórum Hub
+## Explicação das funcionalidades
+
