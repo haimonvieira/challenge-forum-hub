@@ -1,5 +1,5 @@
 # Fórum Hub
-
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 <div>
   <img src="https://img.shields.io/badge/maven--central-v4.0.0-blue"/>
   <img src="https://img.shields.io/badge/spring--boot-v3.3.1-blue"/>
