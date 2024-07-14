@@ -10,7 +10,7 @@
 Mais um desafio do programa ONE, um programa com parceria entre Alura e Oracle para fazer ser possível o programa Oracle Next Education(ONE). Neste challenge final da especialização de backend foi passado para que façamos uma API REST de um fórum, mais especificamente da parte de tópicos.
 
 ## Funcionalidades
--  Operações **CRUD(CREATE, READ, UPDATE, DELETE)** de Tópico, Curso, e Usuário;
+-  Operações **CRUD(CREATE, READ, UPDATE, DELETE)** de Tópico, Curso e Usuário;
   ![Vídeo demonstrativo das operações CRUD](https://github.com/user-attachments/assets/164875a3-70f5-4cf1-8725-58fb2c769ed2)
 -  Gerar documentação por meio do Swagger;
 -  Validações conforme as regras de negócios;
