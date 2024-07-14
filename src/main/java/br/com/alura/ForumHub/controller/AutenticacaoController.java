@@ -4,6 +4,7 @@ import br.com.alura.ForumHub.domain.usuario.DadosAutenticacao;
 import br.com.alura.ForumHub.domain.usuario.Usuario;
 import br.com.alura.ForumHub.infra.security.DadosTokenJWT;
 import br.com.alura.ForumHub.infra.security.TokenService;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +25,8 @@ public class AutenticacaoController {
     @Autowired
     private TokenService tokenService;
 
+    @Operation(summary = "Endpoint para realizar login de usuário",
+            description = "Recebe dados de autenticação e retorna um token JWT válido.")
     @PostMapping
     public ResponseEntity efetuarLogin(@RequestBody @Valid DadosAutenticacao dados) {
 

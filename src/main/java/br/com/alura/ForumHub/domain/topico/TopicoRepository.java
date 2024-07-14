@@ -13,4 +13,10 @@ public interface TopicoRepository extends JpaRepository<Topico, Long> {
 
     Page<Topico> findAllByEstadoTopicoTrue(Pageable paginacao);
 
+    @Query("SELECT t.id FROM Topico t WHERE t.autor.id = :id")
+    Long buscarIdDoTopicoDoUsuario(Long id);
+
+    @Query("SELECT t.id FROM Topico t WHERE t.curso.id = :id")
+    Long buscarIdDoTopicoDoCurso(Long id);
+
 }

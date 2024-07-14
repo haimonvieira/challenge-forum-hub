@@ -4,6 +4,6 @@ public enum Categoria {
     PROGRAMACAO,
     FRAMEWORKS,
     DEVOPS,
-    SEGURANCA
+    SEGURANCA;
 
 }

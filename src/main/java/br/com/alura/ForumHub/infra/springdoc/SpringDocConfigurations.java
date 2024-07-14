@@ -21,7 +21,7 @@ public class SpringDocConfigurations {
                                         .bearerFormat("JWT")))
                 .info(new Info()
                         .title("Fórum Hub API")
-                        .description("API Rest do Challenge Fórum Hub com o CRUD de tópico"));
+                        .description("API Rest do Challenge Fórum Hub com o CRUD de Tópico, Usuário e Curso."));
     }
 
 
