@@ -1,5 +1,6 @@
 package br.com.alura.ForumHub.domain.usuario;
 
+import br.com.alura.ForumHub.domain.perfil.Perfil;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -23,8 +24,19 @@ public class Usuario implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String nome;
     private String login;
     private String senha;
+
+    @ManyToMany
+    private List<Perfil> perfis;
+
+    public Usuario(DadosCadastroUsuario dados) {
+        this.nome = dados.nome();
+        this.login = dados.login();
+        this.senha = dados.senha();
+        this.perfis = dados.perfis();
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -59,5 +71,19 @@ public class Usuario implements UserDetails {
     @Override
     public boolean isEnabled() {
         return UserDetails.super.isEnabled();
+    }
+
+    public void atualizar(DadosAtualizacaoUsuario dados) {
+
+        if(nome != null){
+            nome = dados.nome();
+        }
+        if(login != null){
+            login = dados.senha();
+        }
+        if(senha != null){
+            senha = dados.senha();
+        }
+
     }
 }

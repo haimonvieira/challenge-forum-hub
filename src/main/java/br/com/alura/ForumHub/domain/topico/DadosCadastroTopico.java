@@ -1,6 +1,7 @@
 package br.com.alura.ForumHub.domain.topico;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 //Cadastro do topico
 public record DadosCadastroTopico(
@@ -10,11 +11,10 @@ public record DadosCadastroTopico(
 
         @NotBlank(message = "{mensagem.obrigatorio}")
         String mensagem,
-
-        @NotBlank(message = "{autor.obrigatorio}")
-        String autor,
-
-        @NotBlank(message = "{curso.obrigatorio}")
-        String curso
+        @NotNull
+        Long idCurso
 ) {
+        public DadosCadastroTopico(Topico topico){
+                this(topico.getTitulo(), topico.getMensagem(), topico.getCurso().getId());
+        }
 }

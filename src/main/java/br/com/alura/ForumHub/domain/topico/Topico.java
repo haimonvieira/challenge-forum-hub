@@ -1,11 +1,15 @@
 package br.com.alura.ForumHub.domain.topico;
 
+import br.com.alura.ForumHub.domain.curso.Curso;
+import br.com.alura.ForumHub.domain.resposta.Resposta;
+import br.com.alura.ForumHub.domain.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Table(name = "topicos")
 @Entity(name = "Topico")
@@ -22,18 +26,35 @@ public class Topico {
     private String mensagem;
     private LocalDateTime data;
     private boolean estadoTopico;
-    private String autor;
-    private String curso;
 
-    public Topico(DadosCadastroTopico dados){
+    @Column(name = "autor")
+    private String nomeAutor;
+    @Column(name = "curso")
+    private String nomeCurso;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "usuario_id")
+    private Usuario autor;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "curso_id")
+    private Curso curso;
+
+    @OneToMany(mappedBy = "topico")
+    private List<Resposta> respostas;
+
+
+    public Topico(DadosCadastroTopico dados, Usuario autor, Curso curso){
 
         //Quando iniciar um topico ele estara ativo
         this.estadoTopico = true;
-        this.titulo = dados.titulo();;
+        this.titulo = dados.titulo();
         this.mensagem = dados.mensagem();
         this.data = LocalDateTime.now();
-        this.autor = dados.autor();
-        this.curso = dados.curso();
+        this.autor = autor;
+        this.curso = curso;
+        this.nomeAutor = autor.getNome();
+        this.nomeCurso = curso.getNome();
 
     }
 
