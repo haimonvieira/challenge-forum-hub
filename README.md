@@ -1,5 +1,5 @@
 # Fórum Hub
-
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 <div>
   <img src="https://img.shields.io/badge/maven--central-v4.0.0-blue"/>
   <img src="https://img.shields.io/badge/spring--boot-v3.3.1-blue"/>
@@ -10,7 +10,7 @@
 Mais um desafio do programa ONE, um programa com parceria entre Alura e Oracle para fazer ser possível o programa Oracle Next Education(ONE). Neste challenge final da especialização de backend foi passado para que façamos uma API REST de um fórum, mais especificamente da parte de tópicos.
 
 ## Funcionalidades
--  Operações **CRUD(CREATE, READ, UPDATE, DELETE)**;
+-  Operações **CRUD(CREATE, READ, UPDATE, DELETE)** de Tópico;
 -  Gerar documentação por meio do Swagger;
 -  Validações conforme as regras de negócios;
 -  Banco de dados para a persistência dos dados;
@@ -18,7 +18,7 @@ Mais um desafio do programa ONE, um programa com parceria entre Alura e Oracle p
 -  Tratamento do código http.
 
 Para entender melhor, veja como funciona as operacoes CRUD do fórum e o tratamentos dos codigos http
-**[clicando aqui](https://github.com/haimonvieira/challenge-forum-hub/tree/main/videos#readme)**
+**[clicando aqui](https://vimeo.com/981529617)**
 
 
 ## Tecnologias utilizadas
@@ -37,19 +37,24 @@ Você pode baixar este projeto **[clicando aqui](https://github.com/haimonvieira
 
 ## 🛠️ Rodando o projeto
 -  Descompacte o arquivo .zip
--  Abra o IntelliJ -> Open
+-  Abra o **IntelliJ -> Open**
 -  Procure o local onde o arquivo foi extraido e selecione-o
--  Aguarde as dependências do Maven serem baixadas e execute o projeto no botão de Play verde em ForumHubAppllication
+-  Aguarde as dependências do Maven serem baixadas
+-  Configure as variáveis de ambientes no arquivo `application.properties` em **src -> main -> resources**
+  -  Caso não tenha as variáveis de ambiente configuradas, recomendo que veja este artigo da Alura de como configurar: [Como configurar variáveis de ambiente no Windows, Linux e macOS](https://www.google.com/search?client=safari&rls=en&q=variaveis+de+amviente+alura&ie=UTF-8&oe=UTF-8)
+- Não se esqueca de criar o DB com o mesmo nome que está no arquivo ou mudar `jdbc:postgresql://${DB_HOST}/{SEU_BANCO_DE_DADOS}`
+- Após feitas as mudanças, selecione o `ForumHubApplication` e inicie a aplicação
+
 
 ## Agradecimentos
 
 Ficam aqui meus sinceros agradecimentos aos instrutores e colaboradores da Alura:
 
 -  **Eric Monné** por estar sempre nos ajudando nas lives
--  **Paz Correa nos** ajudando a dar um gás nesta etapa final da formação Spring
+-  **Paz Correa** nos ajudando a dar um gás nesta etapa final da formação Spring
 -  Nosso queridíssimo **Maurício Santiago** nos apoiando muito com seus incentivos durantes as lives
 -  **Camila Fernanda Alves** que me ajudou com seu artigo sobre [Como escrever um README incrível no seu Github](https://www.alura.com.br/artigos/escrever-bom-readme)
--  **Jacqueline Oliveira** e **Iasmin Araújo** em especial, pois foi com elas que aprendi POO de fato e muito bem. Agradeço imensamente vocês duas, os desafios propos foram essenciais.
+-  **Jacqueline Oliveira** e **Iasmin Araújo** em especial, pois foi com elas que aprendi POO de fato e muito bem. Agradeço imensamente vocês duas, os desafios propostos foram essenciais.
 -  A **Brenda Souza** pelo challenge do LiterAlura que foi um challenge mais dificil que já fiz, mas foi bom para botar tudo em pratica e sofrer um pouco
 -  E ao **Rodrigo da Silva** pela aula de API REST e explicar tão bem o que cada anotacão e dependência está fazendo, isso sanou minhas dúvidas sem ter que perguntar: "para que ele está fazendo isso?"
 -  **Paulo Silveira**, nosso entusiasta de IA que também ensinou muito sobre Java e orientação a objetos.
