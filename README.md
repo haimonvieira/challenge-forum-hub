@@ -64,7 +64,7 @@ Ficam aqui meus sinceros agradecimentos aos instrutores e colaboradores da Alura
 -  E ao **Rodrigo da Silva** pela aula de API REST e explicar tão bem o que cada anotacão e dependência está fazendo, isso sanou minhas dúvidas sem ter que perguntar: "para que ele está fazendo isso?"
 -  **Paulo Silveira**, nosso entusiasta de IA que também ensinou muito sobre Java e orientação a objetos.
 
-Acredito que tenham faltado alguns instrutores e colaboradores, mas saibam que todos foram importantes para meu sucesso até aqui, um imenso agradecimento a todos.
+Acredito que tenham faltado alguns instrutores e colaboradores, mas saibam que todos foram importantes para meu sucesso até aqui, um imenso agradecimento a todos. Em especial ao curso de Desenvolvimento Pessoal da Alura, em que eu mudei completamente meu mindset e meu comportamente e também me ajudou a mudar meus hábitos, em pouco tempo eu virei outra pessoa.
 
 ## Útil
 Não esqueca de ter o Java e o JDK instalados em sua máquina com as versões compatíveis.
