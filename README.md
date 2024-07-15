@@ -1,4 +1,8 @@
 # Fórum Hub
+<p align= "center">
+  <img src="https://github.com/haimonvieira/challenge-forum-hub/assets/81303638/8629d122-2b74-4064-a71c-722fcb2a4f01" alt="Badge-Spring">
+</p>
+
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 <div>
   <img src="https://img.shields.io/badge/maven--central-v4.0.0-blue"/>
@@ -64,5 +68,3 @@ Acredito que tenham faltado alguns instrutores e colaboradores, mas saibam que t
 
 ## Útil
 Não esqueca de ter o Java e o JDK instalados em sua máquina com as versões compatíveis.
-
-![Badge-Spring](https://github.com/haimonvieira/challenge-forum-hub/assets/81303638/8629d122-2b74-4064-a71c-722fcb2a4f01)
